@@ -1,4 +1,4 @@
-package com.smarttaskmanager.smarttaskmanager
+package com.smarttaskmanager.app
 
 import io.flutter.embedding.android.FlutterActivity
 
