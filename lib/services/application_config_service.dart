@@ -19,7 +19,6 @@ class ApplicationConfigService {
   void setOnBoarded() async {
     _preferences.setBool(_onBoarded, true);
   }
-
 }
 
 const String _onBoarded = 'onBoarded';
