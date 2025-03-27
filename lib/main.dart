@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:smarttaskmanager/router.dart';
 import 'package:smarttaskmanager/service_locator.dart';
+import 'package:smarttaskmanager/services/navigation_service.dart';
 import 'package:smarttaskmanager/views/app_base_view_model.dart';
 import 'package:smarttaskmanager/views/onboarding/onboard_view.dart';
 
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         create: (BuildContext context) => AppBaseViewModel(),
         child: const OnboardView(),
       ),
+      navigatorKey: locator<NavigationService>().navigationKey,
       onGenerateRoute: generateRoute,
     );
   }

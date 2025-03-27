@@ -5,11 +5,13 @@ class OnboardViewModel extends AppBaseViewModel {
     await applicationConfigService.getSharedPreferences();
     if (applicationConfigService.onBoardedAlready()) {
       // navigate to login
+      navigateToHome(clearBackStack: false);
     }
   }
 
   void onIntroEnd() async {
     applicationConfigService.setOnBoarded();
     // navigate to login
+    navigateToHome(clearBackStack: false);
   }
 }
